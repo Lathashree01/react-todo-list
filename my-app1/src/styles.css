@@ -1,5 +1,14 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.button-class {
+  cursor: pointer;
+}
+.add-todo{
+  margin: 0px 20px;
+}
+.add-todo-input{
+  margin-left:50px ;
+}
