@@ -23,7 +23,7 @@ class DeleteTodo extends React.Component {
                     fontWeight: 'bold',
                     marginLeft: 10
                 }}>
-                x
+                X
             </span>
         );
     }

@@ -1,14 +1,44 @@
 .App {
-  font-family: sans-serif;
+  font-family: cursive;
   text-align: center;
 }
-
 .button-class {
   cursor: pointer;
 }
-.add-todo{
+.add-todo {
+  background-color: #a0598e;
+  color: white;
+  padding: 10px 22px;
   margin: 0px 20px;
+  border: none;
+  border-radius: 20px;
 }
-.add-todo-input{
-  margin-left:50px ;
+.add-todo-input {
+  margin-left: 50px;
+  border-radius: 5px;
+  height: 20px;
+  padding: 5px;
+  width: 300px;
+  background-color: #e4d8df;
+  font-family: cursive;
+  border: 0.5px solid #cf91b5;
+}
+.no-todo {
+  margin-left: 50px;
+  font-family: cursive;
+  height: 20px;
+  padding: 5px;
+  width: 300px;
+}
+.update-diary {
+  font-family: cursive;
+  margin-left: 50px;
+}
+.list-style {
+  list-style-type: none;
+}
+.checkbox {
+  height: 17px;
+  width: 20px;
+  margin: 0px 7px;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import DeleteTodo from './DeleteTodo';
 
-
 class TodoList extends React.Component {
     constructor(props) {
         super(props);
@@ -22,19 +21,25 @@ class TodoList extends React.Component {
     render() {
         if (!this.props.todos.length) {
             return (
-                <h3>No TO-Dos, enjoy your day.</h3>
+                <h3 className="no-todo">No TO-Dos, enjoy your day.</h3>
             )
         }
         return (
             <ul>
                 {this.props.todos.map(todo => (
                     <li
-                        onDoubleClick={() => this.handleToggleTodo(todo)}
-                        style={{
-                            textDecoration: todo.done ? 'line-through' : ''
-                        }} key={todo.id}>
-                        {todo.text}
-                        <DeleteTodo todo={todo} setTodos={this.props.setTodos} />
+                        // onDoubleClick={() => this.handleToggleTodo(todo)}
+                        // style={{
+                        //     textDecoration: todo.done ? 'line-through' : ''
+                        // }} 
+                        key={todo.id} className="list-style">
+                        <label>
+                            <input type="checkbox" className="checkbox"
+                                defaultChecked={todo.done}
+                            />
+                            {todo.text}
+                        </label>
+                        <DeleteTodo todo={todo} className="button-class" setTodos={this.props.setTodos} />
                     </li>
                 ))}
             </ul>
