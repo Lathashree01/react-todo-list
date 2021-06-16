@@ -41,6 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.1"
-  },
-  "homepage": "http://Lathashree01.github.io/react-todo-list"
+  }
 }
